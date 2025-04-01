@@ -178,8 +178,9 @@ function App() {
           <textarea
             value={text}
             onChange={handleTextChange}
-            className="w-full h-96 p-4 rounded-lg bg-gray-800/70 backdrop-blur-sm border border-gray-700 focus:border-purple-500 focus:ring-2 focus:ring-purple-500/50 outline-none resize-none text-gray-100 placeholder-gray-400 shadow-xl"
+            className="w-full h-96 p-4 rounded-lg bg-gray-800/70 backdrop-blur-sm border border-gray-700 focus:border-purple-500 focus:ring-2 focus:ring-purple-500/50 outline-none resize-none text-gray-100 placeholder-gray-400 shadow-xl font-mono whitespace-pre overflow-auto"
             placeholder="Type or paste your text here..."
+            spellCheck="false"
           />
         </div>
         
