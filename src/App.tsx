@@ -95,7 +95,7 @@ function App() {
         <div className="flex items-center justify-between mb-6 bg-gray-800/50 p-3 rounded-lg backdrop-blur-sm">
           <div className="flex items-center">
             <div className={`w-2 h-2 rounded-full mr-2 ${isSyncing ? 'bg-yellow-400 animate-pulse' : 'bg-green-400'}`}></div>
-            <span className="text-sm text-gray-300">
+            <span className="hidden sm:inline text-sm text-gray-300">
               {isSyncing ? 'Syncing...' : 'Connected'}
             </span>
           </div>
@@ -178,7 +178,7 @@ function App() {
           <textarea
             value={text}
             onChange={handleTextChange}
-            className="w-full h-96 p-4 rounded-lg bg-gray-800/70 backdrop-blur-sm border border-gray-700 focus:border-purple-500 focus:ring-2 focus:ring-purple-500/50 outline-none resize-none text-gray-100 placeholder-gray-400 shadow-xl font-mono whitespace-pre overflow-auto"
+            className="w-full h-96 p-4 rounded-lg bg-gray-800/70 backdrop-blur-sm border border-gray-700 focus:border-purple-500 focus:ring-2 focus:ring-purple-500/50 outline-none resize-none text-gray-100 placeholder-gray-400 shadow-xl font-mono overflow-x-hidden overflow-y-auto"
             placeholder="Type or paste your text here..."
             spellCheck="false"
           />
